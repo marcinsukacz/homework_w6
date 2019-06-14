@@ -28,6 +28,10 @@ const createToDoTask = function (form) {
   taskImportance.textContent = form.taskImportance.value;
   toDoTask.appendChild(taskImportance);
 
+  const taskUrgency = document.createElement('h3');
+  taskUrgency.textContent = form.taskUrgency.value;
+  toDoTask.appendChild(taskUrgency);
+
   const dueDate = document.createElement('h3');
   dueDate.textContent = form.dueDate.value;
   toDoTask.appendChild(dueDate);

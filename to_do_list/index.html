@@ -16,21 +16,24 @@
         </div>
 
         <div class="form-item">
-          <label for="tasImportance">Importance</label>
+          <label for="taskImportance">Importance</label>
           <select id="taskImportance">
             <option value="" disabled selected></option>
-            <option value="important and urgent">important and urgent</option>
-            <option value="important and not urgent">important and not urgent</option>
-            <option value="not important but urgent">not important but urgent</option>
-            <option value="not important, not urgent">not important, not urgent</option>
+            <option value="Important">Important</option>
+            <option value="Not important">Not important</option>
           </select>
+        </div>
+
+        <div class="form-item">
+            <label for="taskUrgency">Urgency</label><br>
+            <input type="radio" name="urgency" id="taskUrgency" value="Urgent">Urgent<br>
+            <input type="radio" name="urgency" id="taskUrgency" value="Not urgent">Not urgent<br>
         </div>
 
         <div class="form-item">
           <label for="dueDate">Date and Time</label>
           <input type="datetime-local" id="dueDate" required>
         </div>
-
 
       </div>
       <input type="submit" value="save"/>
