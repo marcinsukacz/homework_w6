@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/app.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <form id="new-task-form">
+      <div class="form-wrapper">
+
+        <div class="form-item">
+          <label for="taskName">Task</label>
+          <input type="text" id="taskName" required>
+        </div>
+
+        <div class="form-item">
+          <label for="tasImportance">Importance</label>
+          <select id="taskImportance">
+            <option value="" disabled selected></option>
+            <option value="important and urgent">important and urgent</option>
+            <option value="important and not urgent">important and not urgent</option>
+            <option value="not important but urgent">not important but urgent</option>
+            <option value="not important, not urgent">not important, not urgent</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="dueDate">Date and Time</label>
+          <input type="datetime-local" id="dueDate" required>
+        </div>
+
+
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>To Do List</h1>
+    <div id="to-do-list"></div>
+  </body>
+</html>
