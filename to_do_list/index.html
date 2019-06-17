@@ -13,7 +13,12 @@
         <div class="form-item">
           <label for="taskName">Task</label>
           <input type="text" id="taskName" required>
-        </div>
+        </div><br>
+<!--
+        <div id="message">
+          <label for="taskDescription">Task description:</label>
+          <textarea id="taskDescription" name="user_message"></textarea>
+        </div> -->
 
         <div class="form-item">
           <label for="taskImportance">Importance</label>
@@ -22,26 +27,28 @@
             <option value="Important">Important</option>
             <option value="Not important">Not important</option>
           </select>
-        </div>
+        </div><br>
 
         <div class="form-item">
             <label for="taskUrgency">Urgency</label><br>
             <input type="radio" name="urgency" id="taskUrgency" value="Urgent">Urgent<br>
             <input type="radio" name="urgency" id="taskUrgency" value="Not urgent">Not urgent<br>
-        </div>
+        </div><br>
 
         <div class="form-item">
           <label for="dueDate">Date and Time</label>
           <input type="datetime-local" id="dueDate" required>
-        </div>
+        </div><br>
+          <input type="submit" value="save"/>
+      </div><br>
 
-      </div>
-      <input type="submit" value="save"/>
     </form>
 
-    <button id="delete-all">Delete All</button>
 
     <h1>To Do List</h1>
     <div id="to-do-list"></div>
+
+    <button id="delete-all">Delete All</button>
+
   </body>
 </html>
